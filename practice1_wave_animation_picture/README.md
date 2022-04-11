@@ -22,5 +22,6 @@
 
   원본의 크기를 조절하면 좋을 거 같다.
 
-[practice1-wave-animation-picture](https://practice1-wave-animation-picture.netlify.app/)
+해당페이지 구경하기 : [practice1-wave-animation-picture](https://practice1-wave-animation-picture.netlify.app/)
 
+----
