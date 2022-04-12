@@ -43,3 +43,9 @@
 11. 가장 상위에서 templates를 만들어 base.html 을 넣어준다. 그리고 `! + tab` 을 해줘서 기본 형태를 잡고 부트스트랩 넣어주고 타이틀 작성해주고 `block content`해준다
 
 12. settings.py 가서 TEMPLATES 가서 DIR 부분 안에 BASE_DIR / 'templates' 넣어서 이곳을 확인할 수 있도록 해주기
+
+----
+
+#### 본격적으로 url , view, template 순으로 작업시작
+
+1. 
