@@ -18,5 +18,5 @@
 
 1. `django-admin startproject crud .` 여기서 crud 프로젝트 뒤에 점찍는 이유는 현재 위치에 생성하도록 하기 위해서임. 점 없으면 안에 폴더 또 만들어지고 그안에 생성됨.
 2. `python manage.py startapp articles` 앱 생성 (앱은 일반적으로 복수형으로 작성함)
-3. 
+3. 세팅에서 앱 등록 해주기 & LANGUAGE_CODE ='en-us' 를 한글로 바꿀려면 'ko-kr' 로 바꾸고 TIME_ZONE ='UTC'를 한국시간으로 바꿀려면 'Asia/Seoul' 로 바꿔주기 (지금 practice에서는 앱등록하고 시간만 바꿔줬음)
 
