@@ -21,3 +21,11 @@ def detail(request, pk):
     article = Article.objects.get(pk=pk)
     context = { 'article': article, }
     return render(request, 'articles/detail.html', context)
+
+def delete(request, pk):
+    article = Article.objects.get(pk=pk)
+    if request.method == 'POST':
+        article.delete()
+        return redirect('articles:index')
+    else:
+        return redirect('articles:detail', article.pk)

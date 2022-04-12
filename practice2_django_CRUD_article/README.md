@@ -97,5 +97,15 @@
 #### DETAIL, DELETE, EDIT
 
 1. 개별 게시글 상세 페이지를 위해 url에서 `'<int:pk>/'`로 경로를 지정해줌 view에서 detail 함수에서 get(pk=pk) 를 통해 우측 pk는 variable routing을 통해 받은 pk이며 왼쪽 pk는 DB에 저장된 레코드의 pk(id)임
+
 2. detail.html 작성해 페이지 만들어 주고 index.html에 detail 링크작성
+
 3. create 메소드에서 변경해서 글 작성이후 글목록으로 안가고 detail로 이동하도록 작성하기. redirect에서 인덱스를 디테일로 바꾸고 pk가져가도록 하기
+
+   > 여기까지가 CRUD에서 CR임!!!!
+   >
+   > 이제 밑으로 UD 계속해서 진행하기!
+
+4. Delete진행하기. 먼저 url 만들고 view에서 메소드 만들고 detail.html에서 글삭제 할 수 있도록 해주는 버튼 만들기. 여기서 a태그쓰면 GET방식으로 주소창에서 지울수 있게 되므로 form으로 작성해야하고 POST방식으로 하고 csrf토큰도 사용해야함!
+
+5. view에서 delete에서 if문을 사용해서 post만 삭제 요청되도록 하기
