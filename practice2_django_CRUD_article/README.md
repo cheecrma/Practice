@@ -113,3 +113,5 @@
 6. 마찬가지로 url에 edit만들어 주고 view에 edit함수 만들어주고 템플릿에 edit.html만들어주기. new에 있는 form 복사해서 가져옴. value 추가해줌
 
 7. detail 페이지에 EDIT페이지로 갈 수 있는 링크 작성
+
+8. 마찬가지로 url에 update만들어주고 view에 작성해주고 create와 마찬가지로 별도의 수정되었다는 메시지를 출력하는 template은 필요없으며 edit.html에서 form action에 링크를 추가하면 됨.
