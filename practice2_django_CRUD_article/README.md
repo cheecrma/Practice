@@ -109,3 +109,7 @@
 4. Delete진행하기. 먼저 url 만들고 view에서 메소드 만들고 detail.html에서 글삭제 할 수 있도록 해주는 버튼 만들기. 여기서 a태그쓰면 GET방식으로 주소창에서 지울수 있게 되므로 form으로 작성해야하고 POST방식으로 하고 csrf토큰도 사용해야함!
 
 5. view에서 delete에서 if문을 사용해서 post만 삭제 요청되도록 하기
+
+6. 마찬가지로 url에 edit만들어 주고 view에 edit함수 만들어주고 템플릿에 edit.html만들어주기. new에 있는 form 복사해서 가져옴. value 추가해줌
+
+7. detail 페이지에 EDIT페이지로 갈 수 있는 링크 작성

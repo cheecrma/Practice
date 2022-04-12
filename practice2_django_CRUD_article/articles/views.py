@@ -29,3 +29,8 @@ def delete(request, pk):
         return redirect('articles:index')
     else:
         return redirect('articles:detail', article.pk)
+
+def edit(request, pk):
+    article = Article.objects.get(pk=pk)
+    context= { 'article': article, }
+    return render(request, 'articles/edit.html', context)
