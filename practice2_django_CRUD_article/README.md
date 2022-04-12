@@ -10,7 +10,13 @@
 6. ctrl + shift + p를 통해 Interpreter 들어가서 가상환경 전체 적용
 7. .gitignore생성해주기 venv에 양이 너무 많아서 이건 깃 애드커밋 할 필요 없도록 해주기 위함. 그외에도 상황따라 다를 수 있음. 현재는 gitignore.io 들어가서 입력해주는데 윈도우, 파이썬, 장고, 비쥬얼스튜디오 복붙해줬음 (저장하면 venv에 초록불 꺼짐 vsc에서도 왼쪽바에 나타나는 커밋부분 1k에서 1개로 바뀜)
 8. requirement.txt 가져오기 pip list 해서 확인해보면 가상환경이어서 뭐 설치된게 없음
-9. pip install -r requirements.txt 를 통해 requirement 전부 설치해주기
+9. pip install -r requirements.txt 를 통해 requirement 전부 설치해주기 ( `pip install django==3.2.12` 현재는 requirements.txt에 이게 있으므로 따로 안해줬지만 장고를 시작하려면 우선 가상환경 생성하고 활성화 후 장고를 설치 해줘야 한다.)
+
+> 어떤 무언갈 추가로 따로 설치했으면 `pip freeze > requirements.txt`해줘서 requirements.txt에 추가해줘야 함 
+>
+> 위에 코드는 pip list를 requirements.txt로 만들어주는 거임. 
+>
+> 다른 협업하는 사람과 같은 가상환경을 만들기 위해 이용함.
 
 ----
 
