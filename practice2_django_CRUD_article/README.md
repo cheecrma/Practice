@@ -48,4 +48,8 @@
 
 #### 본격적으로 url , view, template 순으로 작업시작
 
-1. 
+1. articles 안에 urls.py 만들기
+2. crud 의 urls.py 가서 articles/ 들어오면 articles 안에 있는 urls.py에 맡기도록 작성해주기 주석처리로 include 하는 방법 나와있음 그대로 따라하면 됨
+3. articles의 urls.py로 가서 작성할 때 path안의 name 적어주는 이유는 html 에서 a태그해서 이동할 때를 위함이며 앱 네임 써주는 이뉴는 앱이 여러개 일 때 다른 앱에서도 같은 name이 있는 경우를 해결하기 위해서 이다.
+4. views.py 에서 index 함수 만들어 주고 articles안에다가 templates만들고 그 안에 articles만들고 그안에 index.html 만들기 (전체 게시글 조회)  view에서 'articles' key로 넘겨주고 index.html에서 for를 사용해서 보여줄 article을 p태그로 사용해서 만들기
+5. 이후 서버 열면 글목록엔 아무것도 없음 그 이유는 글 작성을 안해서임. admin가서 글 작성하면 p태그 작성한 거 뜸
