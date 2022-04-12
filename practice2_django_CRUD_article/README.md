@@ -96,3 +96,6 @@
 
 #### DETAIL, DELETE, EDIT
 
+1. 개별 게시글 상세 페이지를 위해 url에서 `'<int:pk>/'`로 경로를 지정해줌 view에서 detail 함수에서 get(pk=pk) 를 통해 우측 pk는 variable routing을 통해 받은 pk이며 왼쪽 pk는 DB에 저장된 레코드의 pk(id)임
+2. detail.html 작성해 페이지 만들어 주고 index.html에 detail 링크작성
+3. create 메소드에서 변경해서 글 작성이후 글목록으로 안가고 detail로 이동하도록 작성하기. redirect에서 인덱스를 디테일로 바꾸고 pk가져가도록 하기

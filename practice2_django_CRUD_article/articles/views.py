@@ -15,4 +15,9 @@ def create(request):
     content = request.POST.get('content')
     article = Article(title=title, content=content)
     article.save()
-    return redirect('articles:index')
+    return redirect('articles:detail', article.pk)
+
+def detail(request, pk):
+    article = Article.objects.get(pk=pk)
+    context = { 'article': article, }
+    return render(request, 'articles/detail.html', context)
