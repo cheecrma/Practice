@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from .models import Article
 
 # Create your views here.
@@ -11,8 +11,8 @@ def new(request):
     return render(request, 'articles/new.html')
 
 def create(request):
-    title = request.GET.get('title')
-    content = request.GET.get('content')
+    title = request.POST.get('title')
+    content = request.POST.get('content')
     article = Article(title=title, content=content)
     article.save()
-    return render(request, 'articles/create.html')
+    return redirect('articles:index')

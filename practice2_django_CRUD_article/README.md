@@ -83,3 +83,16 @@
 15. crerate에서 글목록으로 가는 url 만들어 주기
 
 16. 글 내용들 최신순을 위로 올리기 위해 views.py 에서 index 함수에서 articles 뒤에 `.all()[::-1]` 또는 `.order_by('-pk')`를 이용해주기 (여기서 all은 전부 가져오는거고 get은 하나 가져오는거고 일부분만 갖고 오고싶으면 filter를 이용해서 order_by 하면 됨. filter없이 그냥 order_by는 전부 적용 됨) (이런 정보들은 전부 공식문서에 있으니 꼭 공식문서와 친해지기!)
+
+17. new.html에서 method POST로 바꿔주고 csrf 토큰 추가해줌
+
+18. view에서도create함수에서 불러오는거 GET을 POST로 바꿔주기
+
+19. 그리고 create함수에서 render를 하고 index템플릿으로 가게되면 글을 작성 후에도 게시글 조회가 되지 않음 URL은 여전히 create에 머물러 있게됨. 즉 단순히 인덱스 페이지만 render되었을 뿐 그렇기에 redirect를 해줘야 함. create함수에서 render를 redirect로 바꾸고 index.html로 가도록 해주기
+
+20. 그러면 이제 create에서 생성후 바로 articles:index로 이동하므로 create.html에서 성공적으로 글이 작성되었다는 템플릿은 필요가 없음. 템플릿에서 create.html 삭제해주면 됨
+
+----
+
+#### DETAIL, DELETE, EDIT
+
