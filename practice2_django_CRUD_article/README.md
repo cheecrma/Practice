@@ -49,7 +49,37 @@
 #### 본격적으로 url , view, template 순으로 작업시작
 
 1. articles 안에 urls.py 만들기
+
 2. crud 의 urls.py 가서 articles/ 들어오면 articles 안에 있는 urls.py에 맡기도록 작성해주기 주석처리로 include 하는 방법 나와있음 그대로 따라하면 됨
+
 3. articles의 urls.py로 가서 작성할 때 path안의 name 적어주는 이유는 html 에서 a태그해서 이동할 때를 위함이며 앱 네임 써주는 이뉴는 앱이 여러개 일 때 다른 앱에서도 같은 name이 있는 경우를 해결하기 위해서 이다.
+
 4. views.py 에서 index 함수 만들어 주고 articles안에다가 templates만들고 그 안에 articles만들고 그안에 index.html 만들기 (전체 게시글 조회)  view에서 'articles' key로 넘겨주고 index.html에서 for를 사용해서 보여줄 article을 p태그로 사용해서 만들기
+
 5. 이후 서버 열면 글목록엔 아무것도 없음 그 이유는 글 작성을 안해서임. admin가서 글 작성하면 p태그 작성한 거 뜸
+
+   ----
+
+6. 다시 url 가서 new 페이지 만들준비
+
+7. view 가서 new함수 만들고
+
+8. new.html 만들고
+
+9. new.html 에서 form 작성하고
+
+10. index.html 에서 글 작성 a태그 만들어주기
+
+    ----
+
+11. 다시 url 가서 create 페이지 만들준비
+
+12. view 가서 create함수 만들고
+
+13. create.html 만들고
+
+14. new의 form에서 action 부분 수정하기 (url 추가해주기. create로 가는)
+
+15. crerate에서 글목록으로 가는 url 만들어 주기
+
+16. 글 내용들 최신순을 위로 올리기 위해 views.py 에서 index 함수에서 articles 뒤에 `.all()[::-1]` 또는 `.order_by('-pk')`를 이용해주기 (여기서 all은 전부 가져오는거고 get은 하나 가져오는거고 일부분만 갖고 오고싶으면 filter를 이용해서 order_by 하면 됨. filter없이 그냥 order_by는 전부 적용 됨) (이런 정보들은 전부 공식문서에 있으니 꼭 공식문서와 친해지기!)
