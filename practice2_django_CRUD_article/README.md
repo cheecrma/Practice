@@ -17,5 +17,6 @@
 #### 장고 프로젝트 생성부터 시작!
 
 1. `django-admin startproject crud .` 여기서 crud 프로젝트 뒤에 점찍는 이유는 현재 위치에 생성하도록 하기 위해서임. 점 없으면 안에 폴더 또 만들어지고 그안에 생성됨.
-2. 
+2. `python manage.py startapp articles` 앱 생성 (앱은 일반적으로 복수형으로 작성함)
+3. 
 
