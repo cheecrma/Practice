@@ -9,6 +9,23 @@
 </head>
 <body>
   
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">CheeCrMa Study Note</h5>
+      <br>
+      <a class="social-link text-white" href="https://github.com/cheecrma"><ion-icon size="large" name="logo-github"></ion-icon></a>
+      <a class="social-link text-white" href="https://cheecrma.tistory.com"><ion-icon size="large" name="document-outline"></ion-icon></a>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+
   <div class="container">
 
 
@@ -21,7 +38,7 @@
 
     <div class="row justify-content-center">
 
-      
+      <!-- 100 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/100.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -54,6 +71,7 @@
         </div>
       </div>
 
+      <!-- 200 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/200.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -89,6 +107,7 @@
         </div>
       </div>
 
+      <!-- 201 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/201.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -108,7 +127,7 @@
                 </div>
                 <img src="assets/201.png" alt="...">
                 <div class="modal-body mx-4 mb-4">
-                  응답이 지금까지 상태 괜찮음. 클라이언트가 계속해서 요청을 하거나 이미 요청을 완료한 경우에는 무시해도 됨.
+                  요청이 성공적이었으며 그 결과로 새로운 리소스가 생성되었음. 이 응답은 일반적으로 POST 요청 또는 일부 PUT 요청 이후에 따라옴.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -119,6 +138,7 @@
         </div>
       </div>
 
+      <!-- 301 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/301.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -138,7 +158,7 @@
                 </div>
                 <img src="assets/301.png" alt="...">
                 <div class="modal-body mx-4 mb-4">
-                  응답이 지금까지 상태 괜찮음. 클라이언트가 계속해서 요청을 하거나 이미 요청을 완료한 경우에는 무시해도 됨.
+                  요청한 리소스의 URI가 변경되었음을 의미함. 새로운 URI가 응답에서 아마도 주어질 수 있음.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -149,6 +169,7 @@
         </div>
       </div>
 
+      <!-- 304 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/304.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -168,7 +189,7 @@
                 </div>
                 <img src="assets/304.png" alt="...">
                 <div class="modal-body mx-4 mb-4">
-                  응답이 지금까지 상태 괜찮음. 클라이언트가 계속해서 요청을 하거나 이미 요청을 완료한 경우에는 무시해도 됨.
+                  캐시를 목적으로 사용됨. 클라이언트에게 응답이 수정되지 않았음을 알려주며, 그러므로 클라이언트는 계속해서 응답의 캐시된 버전을 사용할 수 있음.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -179,6 +200,7 @@
         </div>
       </div>
 
+      <!-- 400 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/400.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -198,7 +220,7 @@
                 </div>
                 <img src="assets/400.png" alt="...">
                 <div class="modal-body mx-4 mb-4">
-                  응답이 지금까지 상태 괜찮음. 클라이언트가 계속해서 요청을 하거나 이미 요청을 완료한 경우에는 무시해도 됨.
+                  잘못된 문법으로 인하여 서버가 요청을 이해할 수 없음을 의미함.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -209,6 +231,7 @@
         </div>
       </div>
 
+      <!-- 401 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/401.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -228,7 +251,7 @@
                 </div>
                 <img src="assets/401.png" alt="...">
                 <div class="modal-body mx-4 mb-4">
-                  응답이 지금까지 상태 괜찮음. 클라이언트가 계속해서 요청을 하거나 이미 요청을 완료한 경우에는 무시해도 됨.
+                  비록 HTTP 표준에서는 "미승인(unauthorized)"를 명확히 하고 있지만, 의미상 이 응답은 "비인증(unauthenticated)"을 의미함. 클라이언트는 요청한 응답을 받기 위해서는 반드시 스스로를 인증해야 함.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -239,6 +262,7 @@
         </div>
       </div>
 
+      <!-- 403 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/403.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -258,7 +282,7 @@
                 </div>
                 <img src="assets/403.png" alt="...">
                 <div class="modal-body mx-4 mb-4">
-                  응답이 지금까지 상태 괜찮음. 클라이언트가 계속해서 요청을 하거나 이미 요청을 완료한 경우에는 무시해도 됨.
+                  클라이언트는 콘텐츠에 접근할 권리를 가지고 있지 않음. 401과 다른 점은 서버가 클라이언트가 누구인지 알고 있음.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -269,6 +293,7 @@
         </div>
       </div>
 
+      <!-- 404 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/404.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -288,7 +313,7 @@
                 </div>
                 <img src="assets/404.png" alt="...">
                 <div class="modal-body mx-4 mb-4">
-                  응답이 지금까지 상태 괜찮음. 클라이언트가 계속해서 요청을 하거나 이미 요청을 완료한 경우에는 무시해도 됨.
+                  서버는 요청받은 리소스를 찾을 수 없음. 브라우저에서는 알려지지 않은 URL을 의미함. 이것은 API에서 종점은 적절하지만 리소스 자체는 존재하지 않음을 의미할 수도 있으며 서버들은 인증받지 않은 클라이언트로부터 리소스를 숨기기 위하여 이 응답을 403 대신에 전송할 수도 있음.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -299,6 +324,7 @@
         </div>
       </div>
 
+      <!-- 429 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/429.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -318,7 +344,7 @@
                 </div>
                 <img src="assets/429.png" alt="...">
                 <div class="modal-body mx-4 mb-4">
-                  응답이 지금까지 상태 괜찮음. 클라이언트가 계속해서 요청을 하거나 이미 요청을 완료한 경우에는 무시해도 됨.
+                  사용자가 지정된 시간에 너무 많은 요청을 보냈음.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -329,6 +355,7 @@
         </div>
       </div>
 
+      <!-- 500 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/500.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -348,7 +375,7 @@
                 </div>
                 <img src="assets/500.png" alt="...">
                 <div class="modal-body mx-4 mb-4">
-                  응답이 지금까지 상태 괜찮음. 클라이언트가 계속해서 요청을 하거나 이미 요청을 완료한 경우에는 무시해도 됨.
+                  서버가 처리 방법을 모르는 상황이 발생함.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -359,6 +386,7 @@
         </div>
       </div>
 
+      <!-- 503 -->
       <div class="col-3 card m-2" style="width: 18rem; height: 25rem;">
         <img src="assets/503.png" class="card-img-top" alt="...">
         <div class="card-body py-0">
@@ -378,7 +406,7 @@
                 </div>
                 <img src="assets/503.png" alt="...">
                 <div class="modal-body mx-4 mb-4">
-                  응답이 지금까지 상태 괜찮음. 클라이언트가 계속해서 요청을 하거나 이미 요청을 완료한 경우에는 무시해도 됨.
+                  서버가 요청을 처리할 준비가 되지 않았음. 일반적인 원인은 유지보수를 위해 작동이 중단되거나 과부하가 걸렸을 때 임.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -391,6 +419,12 @@
     </div>
   </div>
 
+  <footer class="footer text-center">
+    <p class="text-muted small mb-0">Copyright &copy; cheecrma Website 2022</p>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
