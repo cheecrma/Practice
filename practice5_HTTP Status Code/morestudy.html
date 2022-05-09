@@ -40,6 +40,42 @@
       <h1>More Study</h1>
     </div>
   </div>
+  <div class="row justify-content-center">
+    <div class="col text-center mt-4 mb-1" style="width: 18rem;">
+      <h2>SERVER</h2>
+        <p>
+          Server는 크게 두가지로 나눠짐. Web server랑 API server <br>
+          서버는 클라이언트의 요청을 응답하는 어느 컴퓨터임. <br>
+          web 서버는 Request가 왔을 때, web page를 Response의 Body에 담아서 응답을 주는 거! <br>
+          API 서버는 Request가 왔을 때, 요청한 것에 대한 처리를 하고 그 결과를 Response의 Body에 JSON형식으로 담아서 주는 거~
+        </p>
+      <hr>
+      <h2>HTTP</h2>
+        <p>
+          클라이언트와 서버가 서로 어떤 형식으로 데이터를 보내줄건지를 약속한 것(규약) <br>
+          클라이언트와 서버가 서로 데이터를 주고 받으려면 '프로토콜'이 필요하며 웹 개발에서는 HTTP, HTTPS가 중요함.
+        </p>
+      <h2>HTTP의 기본 특성</h2>
+        <p>
+          비연결성(Connetless) <br>
+          클라이언트와 서버가 한 번 응답을 주고 받으면, 연결을 끊는다.
+        </p>
+        <p>
+          무상태(Stateless) <br>
+          Connetless 발생한 것, 서버가 클라이언트를 기억하지 못함(식별 불가능) <br>
+          매번 요청할 때마다, 내가 누군지를 서버에게 알려줘야 함
+        </p>
+        <p>
+          불편함 <br>
+          해결 위해 쿠키와 세션 등장! <br>
+          첨부터 쿠키 세션 개발한 게 아니라 첨엔 쿠키먼저 개발함 <br>
+          쿠키 : 클라이언트! 너가 기억해서 나한테(서버) 들고 와~ <br>
+          문제가 쿠키가 굉장히 쉽게 뺏김 (보안이 취약) <br>
+          세션 : 그 민감한 정보, 서버가 기억해줄게! (아이디 비교해서 식별해줌)
+        </p>
+      <hr>
+    </div>
+  </div>
 
 
   <footer class="footer text-center">
