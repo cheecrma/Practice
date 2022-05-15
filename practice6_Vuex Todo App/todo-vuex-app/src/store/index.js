@@ -5,24 +5,19 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    todos: [
-      {
-        title: '할 일1',
-        isCompleted: false,
-        data: new Date().getTime(),
-      },
-      {
-        title: '할 일2',
-        isCompleted: false,
-        data: new Date().getTime(),
-      }
-    ]
+    todos: [],
   },
   getters: {
   },
   mutations: {
+    CREATE_TODO: function (state, todoItem) {
+      state.todos.push(todoItem)
+    }
   },
   actions: {
+    createTodo: function ( {commit} , todoItem) {
+      commit('CREATE_TODO', todoItem)
+    }
   },
   modules: {
   }
