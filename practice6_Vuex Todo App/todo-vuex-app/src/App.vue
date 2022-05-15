@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <h1>Todo List</h1>
+    <h2>All Todos: {{allTodosCount}} </h2>
+    <h2>Completed Todo: {{completedTodosCount}} </h2>
+    <h2>Uncompleted Todo: {{uncompletedTodosCount}} </h2>
     <todo-list></todo-list>
     <todo-form></todo-form>
   </div>
@@ -15,6 +18,17 @@ export default {
   components: {
     TodoList,
     TodoForm,
+  },
+  computed: {
+    completedTodosCount: function(){
+      return this.$store.getters.completedTodosCount
+    },
+    uncompletedTodosCount: function(){
+      return this.$store.getters.uncompletedTodosCount
+    },
+    allTodosCount: function(){
+      return this.$store.getters.allTodosCount
+    }
   }
 }
 </script>

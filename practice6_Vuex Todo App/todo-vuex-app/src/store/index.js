@@ -8,6 +8,19 @@ export default new Vuex.Store({
     todos: [],
   },
   getters: {
+    allTodosCount: function (state) {
+      return state.todos.length
+    },
+    completedTodosCount: function (state) {
+      return state.todos.filter(todo => {
+        return todo.isCompleted === true
+      }).length
+    },
+    uncompletedTodosCount: function (state) {
+      return state.todos.filter(todo => {
+        return todo.isCompleted === false
+      }).length
+    },
   },
   mutations: {
     CREATE_TODO: function (state, todoItem){
