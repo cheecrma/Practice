@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span>{{ todo.title }}</span>
+    <span @click="updateTodoStatus(todo)" :class="{ 'is-completed':todo.isCompleted }">{{ todo.title }}</span>
     <button @click="deleteTodo">Delete</button>
   </div>
 </template>
@@ -17,10 +17,15 @@ export default {
     deleteTodo: function(){
       this.$store.dispatch('deleteTodo', this.todo)
     },
+    updateTodoStatus: function(){
+      this.$store.dispatch('updateTodoStatus', this.todo)
+    }
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+.is-completed {
+  text-decoration: line-through;
+}
 </style>
