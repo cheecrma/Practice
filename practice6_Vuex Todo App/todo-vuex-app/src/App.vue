@@ -1,11 +1,23 @@
 <template>
-  <div id="app">
-    <h1>Todo List</h1>
-    <h2>All Todos: {{allTodosCount}} </h2>
-    <h2>Completed Todo: {{completedTodosCount}} </h2>
-    <h2>Uncompleted Todo: {{uncompletedTodosCount}} </h2>
-    <todo-list></todo-list>
-    <todo-form></todo-form>
+  <div id="app" class="d-flex justify-content-center">
+    <div style="width: 18rem;">
+      <h1 class="d-flex justify-content-center mt-3">Todo List</h1>
+      <hr>
+      <div>
+      <h3 class="d-flex justify-content-center">All Todos: {{allTodosCount}} </h3>
+      <h3 class="d-flex justify-content-center">Completed Todo: {{completedTodosCount}} </h3>
+      <h3 class="d-flex justify-content-center">Uncompleted Todo: {{uncompletedTodosCount}} </h3>
+      </div>
+      <hr>
+      <div id="box">
+        <span>
+          <todo-list></todo-list>
+        </span>
+      </div>
+      <span>
+      <todo-form></todo-form>
+      </span>
+    </div>
   </div>
 </template>
 
@@ -34,12 +46,8 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+  #box {
+    background: linear-gradient( to top,rgba(46, 100, 218, 0.378),  white);
+  }
 </style>

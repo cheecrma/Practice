@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="d-flex justify-content-between mx-2 pb-2">
     <span @click="updateTodoStatus(todo)" :class="{ 'is-completed':todo.isCompleted }">{{ todo.title }}</span>
-    <button @click="deleteTodo">Delete</button>
+    <button @click="deleteTodo" type="button" class="btn btn-outline-danger">Delete</button>
   </div>
 </template>
 

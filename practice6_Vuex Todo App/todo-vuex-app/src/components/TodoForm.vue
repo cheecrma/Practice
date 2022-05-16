@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <input type="text" v-model.trim="todoTitle" @keyup.enter="createTodo">
-    <button @click="createTodo">Add</button>
+  <div class="input-group input-group-sm mb-3">
+    <input class="input-group-lg form-control" type="text" v-model.trim="todoTitle" @keyup.enter="createTodo"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    <button @click="createTodo"  type="button" class="btn btn-outline-primary">Add</button>
   </div>
 </template>
 
